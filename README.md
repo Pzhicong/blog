@@ -39,11 +39,15 @@
 
 ## routes/index.js是路由文件，相当于控制器，用于组织展示的内容。
 ```
-app.js中通过app.get('/',routes.index)将'/'路径映射到exports.index函数下，其中只有一个语句，res.render('index',{title:"pcat"})，功能是调用模版解析引擎，并传入一个对象作为参数，这个对象只有一个属性，即title
+app.js中通过app.get('/',routes.index)将'/'路径映射到exports.index函数下，  
+其中只有一个语句，res.render('index',{title:"pcat"})，  
+功能是调用模版解析引擎，并传入一个对象作为参数，这个对象只有一个属性，即title
 ```
 
 ## index.ejs模版文件，即routes.index.js中调用的模版。
 ```
-它的基础是HTML语言(我们降低了学习难度)，其中包含了<%=title%>的标签，功能是显示引用的变量。即res.render函数的第二个参数出啊如的对象的属性.
+它的基础是HTML语言(我们降低了学习难度)，其中包含了<%=title%>的标签，  
+功能是显示引用的变量。  
+即res.render函数的第二个参数出啊如的对象的属性.
 ```
  
