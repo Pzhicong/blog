@@ -1,9 +1,10 @@
 # 《Express》
 
 ## 使用express生成了package.json
-
+```
 它只产生了javascript的app.js和routes/index.js。模版引擎ejs有文件index.ejs，此外还有样式表style.css。
 创建工程时候一直使用jade。要求用ejs
+```
 
 
 ## app.js 工程的入口(分析代码)。
@@ -37,10 +38,12 @@
 - 通过express.createServer()函数创建一个应用的实例
 
 ## routes/index.js是路由文件，相当于控制器，用于组织展示的内容。
-
+```
 app.js中通过app.get('/',routes.index)将'/'路径映射到exports.index函数下，其中只有一个语句，res.render('index',{title:"pcat"})，功能是调用模版解析引擎，并传入一个对象作为参数，这个对象只有一个属性，即title
+```
 
 ## index.ejs模版文件，即routes.index.js中调用的模版。
-
+```
 它的基础是HTML语言(我们降低了学习难度)，其中包含了<%=title%>的标签，功能是显示引用的变量。即res.render函数的第二个参数出啊如的对象的属性.
+```
  
